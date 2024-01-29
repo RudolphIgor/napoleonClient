@@ -5,7 +5,31 @@ import Social from "./Social";
 import Contacts from "./Contacts";
 import Nav from "./Nav";
 
+
 const Index = () => {
+    const menuItems =[
+        {
+            id: 1,
+            title: "Главная"
+        },
+        {
+            id: 2,
+            title: "Каталог"
+        },
+        {
+            id: 3,
+            title: "О нас"
+        },
+        {
+            id: 4,
+            title: "Акции"
+        },
+        {
+            id: 5,
+            title: "Отзывы"
+        },
+    ]
+
     return (
 
             <header className={style.header}>
@@ -13,7 +37,7 @@ const Index = () => {
                     <Social/>
                     <img src={logo} alt={'Наполеон'}/>
                     <Contacts/>
-                    <Nav/>
+                    <Nav title={menuItems}/>
                 </div>
 
             </header>
