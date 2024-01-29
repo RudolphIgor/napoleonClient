@@ -8,7 +8,9 @@ const AppRouter = () => {
     const {user} = useContext(Context)
     console.log(user.isAuth)
     return (
-        <Routes>
+        <div className={'main'}>
+        <Routes >
+
             {user.isAuth && authRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={Component}/>
             )}
@@ -18,6 +20,7 @@ const AppRouter = () => {
             <Route path="*" element={<Error/>}/>
             {/*<Route path="*" element={<Navigate to={CATALOG_ROUTE}/>}/>*/}
         </Routes>
+        </div>
     );
 };
 

@@ -6,6 +6,7 @@ import './styles/reset.css'
 import './styles/normalize.css'
 import './styles/index.css'
 import './fonts/fonts.css'
+// import 'https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'
 
 export const Context =createContext(null)
 const root = ReactDOM.createRoot(document.getElementById('root'));
