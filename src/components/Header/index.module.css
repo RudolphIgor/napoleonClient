@@ -9,6 +9,9 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr auto;
     row-gap: 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .social {
@@ -46,14 +49,14 @@ nav {
 
 }
 
-.nav__list{
+.nav__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 43px;
     padding-bottom: 5px;
 }
 
-.nav__item{
+.nav__item {
     cursor: pointer;
     border: 2px solid transparent;
 }

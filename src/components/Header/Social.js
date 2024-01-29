@@ -10,14 +10,14 @@ const Social = () => {
         <div className={style.social}>
 
             <Link to="#" target="_blank" rel="noopener noreferrer">
-                <ImgWhatsapp className={style.social} alt='whatsapp' />
+                <ImgWhatsapp className={style.social} alt='whatsapp'/>
             </Link>
 
-            <Link to={'#'} rel="nofollow noopener noreferrer" target="_blank"  >
+            <Link to={'#'} rel="nofollow noopener noreferrer" target="_blank">
                 <ImgInstagram className={style.social} alt='instagram'/>
             </Link>
 
-            <Link to={"#"} rel="nofollow noopener noreferrer" target="_blank" >
+            <Link to={"#"} rel="nofollow noopener noreferrer" target="_blank">
                 <ImgTelegram className={style.social} alt='telegram'/>
             </Link>
 
