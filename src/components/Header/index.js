@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './../../img/logo.svg'
+import {ReactComponent as Logo} from './../../img/logo.svg'
 import style from './index.module.css'
 import Social from "./Social";
 import Contacts from "./Contacts";
@@ -7,6 +7,7 @@ import Nav from "./Nav";
 
 
 const Index = () => {
+    //Массив пунктов меню
     const menuItems =[
         {
             id: 1,
@@ -35,7 +36,8 @@ const Index = () => {
             <header className={style.header}>
                 <div className={`container ${style.header__container}`}>
                     <Social/>
-                    <img src={logo} alt={'Наполеон'}/>
+                    {/*<img src={logo} alt={'Наполеон'}/>*/}
+                    <Logo/>
                     <Contacts/>
                     <Nav title={menuItems}/>
                 </div>

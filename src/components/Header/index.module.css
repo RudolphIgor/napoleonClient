@@ -55,22 +55,25 @@ nav {
 
 .nav__item{
     cursor: pointer;
+    border: 2px solid transparent;
 }
 
 .nav__item:hover {
     color: #E30016;
     border-bottom: 2px solid #E30016;
-    /*.header {*/
-    /*    margin: 20px 0 33px 0;*/
-    /*    color:red;*/
-    /*}*/
 }
 
-.header.active{
-    margin: 20px 0 35px 0;
-    color: red;
+.social {
+    fill: #fff;
 }
 
+.social:hover {
+    fill: #E30016;
+}
+
+.phone:hover {
+    color: #E30016;
+}
 
 
 

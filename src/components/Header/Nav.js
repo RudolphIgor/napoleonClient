@@ -7,7 +7,7 @@ const Nav = (props) => {
             <ul className={style.nav__list}>
                 {
                     props.title.map(items =>
-                        <li className={style.nav__item}>{items.title}</li>
+                        <li className={style.nav__item} key={items.id}>{items.title}</li>
                     )
                 }
             </ul>
