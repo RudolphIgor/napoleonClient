@@ -11,7 +11,7 @@ const AppRouter = () => {
     console.log(user.isAuth)
 
     return (
-        <div className={`main`}>
+        <div>
             <Routes>
                 {user.isAuth && authRoutes.map(({path, Component}) =>
                     <Route key={path} path={path} element={Component}/>
