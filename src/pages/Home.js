@@ -1,10 +1,11 @@
 import React from 'react';
 import style from './pages.module.css'
+import Section1 from "../components/Section1";
 
 const Auth = () => {
     return (
         <div className={style.container}>
-            HOME
+            <Section1/>
 
         </div>
     );
