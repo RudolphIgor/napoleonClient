@@ -38,7 +38,6 @@ const Index = () => {
         <header className={style.container}>
             <div className={styleHeader.header__container}>
                 <Social/>
-                {/*<img src={logo} alt={'Наполеон'}/>*/}
                 <Logo/>
                 <Contacts/>
                 <Nav title={menuItems}/>
