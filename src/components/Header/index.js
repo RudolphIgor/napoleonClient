@@ -1,7 +1,7 @@
 import React from 'react';
 import {ReactComponent as Logo} from './../../img/logo.svg'
 import styleHeader from './index.module.css'
-import style from '../../styles/index.module.css'
+
 
 import Social from "./Social";
 import Contacts from "./Contacts";
@@ -35,7 +35,7 @@ const Index = () => {
 
     return (
 
-        <header className={style.container}>
+        <header>
             <div className={styleHeader.header__container}>
                 <Social/>
                 <Logo/>
