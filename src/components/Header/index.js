@@ -6,6 +6,7 @@ import styleHeader from './index.module.css'
 import Social from "./Social";
 import Contacts from "./Contacts";
 import Nav from "./Nav";
+import {CATALOG_ROUTE, HOME_ROUTE} from "../../utils/const";
 
 
 const Index = () => {
@@ -13,23 +14,28 @@ const Index = () => {
     const menuItems = [
         {
             id: 1,
-            title: "Главная"
+            title: "Главная",
+            route: HOME_ROUTE
         },
         {
             id: 2,
-            title: "Каталог"
+            title: "Каталог",
+            route: CATALOG_ROUTE
         },
         {
             id: 3,
-            title: "О нас"
+            title: "О нас",
+            route: CATALOG_ROUTE
         },
         {
             id: 4,
-            title: "Акции"
+            title: "Акции",
+            route: CATALOG_ROUTE
         },
         {
             id: 5,
-            title: "Отзывы"
+            title: "Отзывы",
+            route: CATALOG_ROUTE
         },
     ]
 

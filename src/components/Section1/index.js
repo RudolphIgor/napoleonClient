@@ -2,14 +2,18 @@ import React from 'react';
 import style from './section1.module.css'
 import { Autoplay, EffectFade} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import {Autoplay} from "swiper/modules";
-
 import 'swiper/css';
-
 import 'swiper/css/effect-fade';
 import Slider from "./Slider";
 import 'swiper/css/autoplay'
+
 const Index = () => {
+    const slidItems = [
+        {
+            id: 1,
+            img: '/static/media/1.64b80ca01454c2f54114.jpg'
+        }
+    ]
     return (
         <div className={style.wrapper}>
 
@@ -17,7 +21,7 @@ const Index = () => {
                 modules={[Autoplay, EffectFade]}
                 effect="fade"
                 autoplay={{
-                    delay: 3000,
+                    delay: 1000,
                     disableOnInteraction: false
                 }}
                 spaceBetween={50}
@@ -28,10 +32,10 @@ const Index = () => {
                 onSlideChange={() => console.log('slide change')}
             >
                 <SwiperSlide>
-                    <Slider/>
+                    <Slider pic={'static/media/2.f03bb0e919477de0cdad.jpg'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Slider/>
+                    <Slider pic={'/static/media/1.64b80ca01454c2f54114.jpg'}/>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Slider/>

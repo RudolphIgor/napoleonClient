@@ -1,5 +1,7 @@
 import React from 'react';
 import style from './index.module.css'
+import {NavLink} from "react-router-dom";
+import {CATALOG_ROUTE} from "../../utils/const";
 
 const Nav = (props) => {
     return (
@@ -7,7 +9,9 @@ const Nav = (props) => {
             <ul className={style.nav__list}>
                 {
                     props.title.map(items =>
-                        <li className={style.nav__item} key={items.id}>{items.title}</li>
+                        <NavLink to={items.route}>
+                            <li className={style.nav__item} key={items.id}>{items.title}</li>
+                        </NavLink>
                     )
                 }
             </ul>
