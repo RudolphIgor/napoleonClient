@@ -3,6 +3,7 @@ import {ReactComponent as Logo} from './../../img/logo.svg'
 import styleHeader from './index.module.css'
 
 
+
 import Social from "./Social";
 import Contacts from "./Contacts";
 import Nav from "./Nav";
@@ -44,7 +45,7 @@ const Index = () => {
         <header>
             <div className={styleHeader.header__container}>
                 <Social/>
-                <Logo/>
+                <Logo className={styleHeader.logo} />
                 <Contacts/>
                 <Nav title={menuItems}/>
             </div>
