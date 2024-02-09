@@ -8,7 +8,7 @@ import style from '../styles/index.module.css'
 
 const AppRouter = () => {
     const {user} = useContext(Context)
-    console.log(user.isAuth)
+    // console.log(user.isAuth)
 
     return (
         <div className={style.main}>

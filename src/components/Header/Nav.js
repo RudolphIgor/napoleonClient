@@ -5,12 +5,12 @@ import {NavLink} from "react-router-dom";
 
 const Nav = (props) => {
     return (
-        <nav className={style.nav}>
+        <nav>
             <ul className={style.nav__list}>
                 {
                     props.title.map(items =>
-                        <NavLink to={items.route}>
-                            <li className={style.nav__item} key={items.id}>{items.title}</li>
+                        <NavLink key={items.id} to={items.route}>
+                            <li className={style.nav__item} >{items.title}</li>
                         </NavLink>
                     )
                 }

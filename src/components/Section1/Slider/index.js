@@ -6,22 +6,25 @@ import Image from '../../../img/slider/1.jpg'
 
 const Index = (props) => {
     const styleblock = {
-        background: `url(${props.pic}) center no-repeat`,
+        background: `url(${Image}) center no-repeat`,
         height: '498px',
     }
-    console.log(Image)
-    return (
 
-        <div style={styleblock} className={style.wrapper}>
+    return (
+        <div  style={styleblock} className={style.wrapper}>
+                {/*<p className={style.title}>*/}
+
+                {/*</p>*/}
             <div className={`${style.content} ${mainStyle.container}`}>
                 <p className={style.title}>
-                    Скидка на ковровое покрытие
+                    {props.slideArray.text}
                 </p>
                 <button className={style.button}>
-                    Заказать звонок
+                    {props.slideArray.text_btn}
                 </button>
             </div>
         </div>
+
     );
 };
 
