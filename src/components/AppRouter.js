@@ -13,7 +13,7 @@ const AppRouter = () => {
     return (
         <div className={style.main}>
             <Routes>
-                {user.isAuth && authRoutes.map(({path, Component}) =>
+                {user._isAuth && authRoutes.map(({path, Component}) =>
                     <Route key={path} path={path} element={Component}/>
                 )}
                 {publicRoutes.map(({path, Component}) =>

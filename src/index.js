@@ -9,6 +9,7 @@ import './styles/main.css'
 import './fonts/fonts.css'
 
 export const Context = createContext(null)
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Context.Provider

@@ -7,7 +7,7 @@ import 'swiper/css/effect-fade';
 import Slider from "./Slider";
 import 'swiper/css/autoplay'
 import axios from "axios";
-import error from "../../pages/Error";
+
 
 const url = 'http://178.208.66.209:3000/api/slides/get/0/0'
 const Index = () => {
