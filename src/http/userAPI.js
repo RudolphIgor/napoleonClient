@@ -8,10 +8,14 @@ export const login = async (name, password) => {
     const {data} = await $host.post('/api/users/login', form)
     localStorage.setItem('token', data.token)
 
-    return jwtDecode(data.token)
+    return data.token
 }
 
 
 export const check = async () => {
     return await $authHost.get('/api/users/auth')
+}
+
+export const logOut = async () => {
+    return await $authHost.get('/api/users/logout')
 }

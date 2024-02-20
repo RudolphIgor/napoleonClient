@@ -14,7 +14,8 @@ const App = observer(() => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        // console.log(check().then())
+        console.log(user._isAuth)
+
         check().then( data => {
             console.log(data.data.Result)
             if (data.data.Result === 'OK') {
@@ -27,11 +28,11 @@ const App = observer(() => {
         }).finally(() => setLoading(false))
     }, []);
 
-    if (loading) {
-        return <div>
-            Loading
-        </div>
-    }
+    // if (loading) {
+    //     return <div>
+    //         Loading
+    //     </div>
+    // }
 
     return (
         <BrowserRouter>
